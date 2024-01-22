@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form .group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.form .group input {
+    margin: .5rem
+}
+
+input[type=textarea] {
+    height: 100px;
+}
+
+.small-field {
+    width: 25%
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+.flex-start {
+    align-self: flex-start;
+}

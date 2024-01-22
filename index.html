@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <script src="./script.js"></script>
+    <title>Billables</title>
+</head>
+<body>
+    <h1>Billables</h1>
+
+    <div class="form">
+        <div class="group">
+            <input type="number" name="invoice-num" placeholder="Number" class="small-field flex-end" />
+
+            <input type="date" name="date" placeholder="Date" class="small-field flex-start" />
+            
+            <input type="text" name="client-name" placeholder="Client Name" class="small-field flex-start" style="width: 35%" />
+            <input type="textarea" name="client-address" placeholder="Client Address" class="small-field flex-start" style="width: 45%" />
+        </div>
+
+        <div class="group">
+            <input type="text" name="heading" placeholder="Heading" />
+            <input type="textarea" name="brief-description" placeholder="Description" />
+        </div>
+
+        <!-- <div class="group line-items">
+            <input type="text" placeholder="Line item" name="line-item" />
+            <input type="number" placeholder="Quantity" name="line-item-quantity" />
+            <input type="number" placeholder="Fee" name="line-item-fee" />
+        </div> -->
+
+        <div class="group">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Line item" name="line-item" id="item" />
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Quantity" name="line-item-quantity" id="quantity" />
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Fee" name="line-item-fee" id="fee" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="group">
+            <button onclick="calculateBill()">Calculate Bill</button>
+        </div>
+    </div>
+</body>
+</html>
